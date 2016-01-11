@@ -5,16 +5,16 @@
 ** Login   <petit_x@Spontox>
 ** 
 ** Started on  Mon Jan 11 17:43:37 2016 marlon petit
-** Last update Mon Jan 11 19:22:17 2016 marlon petit
+** Last update Mon Jan 11 20:56:22 2016 marlon petit
 */
 
-#ifndef __KOALA_H__
-# define __KOALA_H__
+#ifndef __SICKKOALA_H__
+# define __SICKKOALA_H__
 
-struct	Koala
+struct	SickKoala
 {
-  Koala(std::string);
-  ~Koala();
+  SickKoala(std::string);
+  ~SickKoala();
 
   std::string	name;
 
@@ -25,4 +25,4 @@ struct	Koala
   void	overDrive(std::string);
 };
 
-#endif /* ! __KOALA_H__ */
+#endif /* ! __SICKKOALA_H__ */

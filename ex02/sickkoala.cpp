@@ -5,7 +5,7 @@
 ** Login   <petit_x@Spontox>
 ** 
 ** Started on  Mon Jan 11 17:52:34 2016 marlon petit
-** Last update Mon Jan 11 19:23:18 2016 marlon petit
+** Last update Mon Jan 11 20:57:03 2016 marlon petit
 */
 
 #include <iostream>
@@ -13,22 +13,22 @@
 
 #include "sickkoala.h"
 
-Koala::Koala(std::string name)
+SickKoala::SickKoala(std::string name)
 {
   this->name = name;
 }
 
-Koala::~Koala()
+SickKoala::~SickKoala()
 {
   std::cout << "Mr." << this->getName() << ": Kreooogg !! Je suis gueriiii !" << std::endl;
 }
 
-void	Koala::poke()
+void	SickKoala::poke()
 {
   std::cout << "Mr." << this->getName() << ": Gooeeeeerrk !! :’(" << std::endl;
 }
 
-int	Koala::takeDrug(std::string str)
+int	SickKoala::takeDrug(std::string str)
 {
   if (!str.compare("mars"))
     {
@@ -47,7 +47,7 @@ int	Koala::takeDrug(std::string str)
     }
 }
 
-void	Koala::overDrive(std::string str)
+void	SickKoala::overDrive(std::string str)
 {
   int	pos;
   int	i;
@@ -66,12 +66,12 @@ void	Koala::overDrive(std::string str)
   std::cout << &str[i] << std::endl;
 }
 
-void	Koala::setName(std::string name)
+void	SickKoala::setName(std::string name)
 {
   this->name = name;
 }
 
-std::string	Koala::getName()
+std::string	SickKoala::getName()
 {
   return (this->name);
 }
