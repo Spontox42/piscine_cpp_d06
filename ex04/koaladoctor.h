@@ -5,11 +5,13 @@
 ** Login   <petit_x@epitech.net>
 ** 
 ** Started on  Mon Jan 11 19:32:29 2016 marlon petit
-** Last update Mon Jan 11 21:04:15 2016 marlon petit
+** Last update Mon Jan 11 22:28:55 2016 marlon petit
 */
 
 #ifndef __KOALADOCTOR_H__
 # define __KOALADOCTOR_H__
+
+#include "sickkoala.h"
 
 struct	KoalaDoctor
 {
@@ -17,9 +19,12 @@ struct	KoalaDoctor
   ~KoalaDoctor();
 
   std::string	name;
+  int	w;
 
   void	setName(std::string);
-  int	getName();
+  std::string	getName();
+  void	diagnose(SickKoala *);
+  void	timeCheck();
 };
 
 #endif /* ! __KOALADOCTOR_H__ */

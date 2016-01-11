@@ -5,7 +5,7 @@
 ** Login   <petit_x@Spontox>
 ** 
 ** Started on  Mon Jan 11 17:52:34 2016 marlon petit
-** Last update Mon Jan 11 20:59:22 2016 marlon petit
+** Last update Mon Jan 11 23:11:02 2016 marlon petit
 */
 
 #include <fstream>
@@ -35,15 +35,19 @@ std::string	KoalaNurse::readReport(std::string report)
 {
   std::string	ret;
   std::fstream fs (report.c_str(), std::ios::in);
+
   if (fs.is_open())
     {
       ret = fs.get();
       while (fs.good())
 	ret += fs.get();
-      ret.erase(ret.end() - 1);
+      ret.erase(ret.end() - 2, ret.end());
       report.erase(report.end() -7, report.end());
       std::cout << "Nurse " << this->id << ": Kreog ! Il faut donner un " << ret << " a Mr." << report <<" !" <<  std::endl;
+      fs.close();
     }
+  else
+    ret.empty();
   return (ret);
 }
 
