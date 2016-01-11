@@ -5,7 +5,7 @@
 ** Login   <petit_x@Spontox>
 ** 
 ** Started on  Mon Jan 11 15:40:13 2016 marlon petit
-** Last update Mon Jan 11 16:19:13 2016 marlon petit
+** Last update Mon Jan 11 20:50:21 2016 marlon petit
 */
 
 #include <iostream>
@@ -13,7 +13,7 @@
 
 int	main(int ac, char **av)
 {
-  int	i = 0;
+  int	i = 1;
   char	str;
 
   if (ac == 1)
